@@ -252,7 +252,7 @@ nav ul {
   position: relative;
 }
 
-.main-picture-grid img {
+.main-grid-content img {
   width: 100%;
   filter: grayscale(1) brightness(0.9);
 }
@@ -272,7 +272,7 @@ nav ul {
 
 .about .container {
   min-height: 100vh;
-  padding: 7.2rem 4rem;
+  padding: 6.5rem 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,9 +305,6 @@ nav ul {
 }
 
 .about .big-title-one-grid {
-  /* font-family: "merona"; */
-  /* font-family: "alonzo-light"; */
-  /* font-family: "rosehot"; */
   font-family: "bizantheum";
   text-transform: uppercase;
   font-size: 1.76rem;
@@ -356,6 +353,11 @@ nav ul {
   transform: translate(-50%, -50%);
   position: absolute;
   left: 50%;
+}
+
+.main-grid-content {
+  z-index: 1;
+  position: relative;
 }
 
 .main-picture-grid {
@@ -414,5 +416,47 @@ nav ul {
   grid-column: 2/3;
   font-size: 0.84rem;
   max-width: 288px;
+  font-weight: 300;
   line-height: 1.5;
+}
+
+.main-picture-grid .about-img-2 {
+  position: absolute;
+  z-index: 2;
+  top: 18.5%;
+  left: -7%;
+  height: 120px;
+  width: 200px;
+  background: url(../img/about2.png) center center / cover no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.main-picture-grid .about-img-2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(9, 93, 212, 0.5);
+}
+
+.about3 {
+  position: absolute;
+  width: 37%;
+  left: 97%;
+  top: 44%;
+  transform: translateY(-50%);
+  filter: grayscale(1);
+}
+
+.about4 {
+  position: absolute;
+  width: 55%;
+  right: 85%;
+  z-index: 3;
+  top: 85%;
+  transform: translateY(-50%);
 }
