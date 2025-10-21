@@ -448,3 +448,7 @@ nav ul {
   top: 95%;
   transform: translate(-50%, -50%);
 }
+
+.mission .container {
+  border-top: 1px solid var(--text-color-2);
+}
