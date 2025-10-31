@@ -337,8 +337,7 @@ nav ul {
   width: 24px;
   height: 24px;
   border-radius: 100%;
-  border: 1px solid var(--heading-color-2);
-  opacity: 0.5;
+  border: 1px solid var(--scnd-text-color-2);
 }
 
 .leaiiba .point {
@@ -442,13 +441,86 @@ nav ul {
 
 .about4 {
   position: absolute;
-  width: 35%;
+  width: 60px;
+  height: 60px;
   left: 0%;
   z-index: 3;
-  top: 95%;
+  top: 100%;
   transform: translate(-50%, -50%);
+  background-color: var(--heading-color-2);
 }
 
-.mission .container {
-  border-top: 1px solid var(--text-color-2);
+.mission {
+  background-color: var(--bg-color);
+}
+
+.mission-heading {
+  padding: 7rem 0 2rem;
+  position: relative;
+  font-family: "bizantheum";
+  text-transform: uppercase;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1px;
+  width: 80%;
+  background-color: #d8d8d8;
+}
+
+.mission-heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 100px;
+  border-radius: 2px;
+  background-color: var(--heading-color-2);
+}
+
+.mission-heading h1 {
+  display: flex;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  color: var(--heading-color-2);
+  align-items: center;
+}
+
+.mission-heading .leaiiba {
+  flex-direction: row;
+  width: initial;
+  height: 24px;
+  margin-top: 0;
+  margin-bottom: 0.35em;
+  padding-right: 0.2em;
+  padding-left: 0;
+}
+
+.mission-heading .leaiiba .circle {
+  order: 2;
+  margin-left: 0.12em;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 7rem;
+}
+
+.no9ta {
+  width: 4px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: var(--heading-color-2);
+  margin-bottom: 0.35em;
+  margin-left: 0.2em;
 }
